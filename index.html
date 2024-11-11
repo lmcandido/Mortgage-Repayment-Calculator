@@ -11,24 +11,39 @@
 </head>
 <body>
 
-  <div class="container">
-    <h2>Morgate Calculator</h2>
-    <span>Clear All</span>
-    <div class="container-titles">
-      <div class="container-items">
-        <div class="container-items-title">Mortgage Amount</div>
-        <input type="text" name="currency-field" pattern="^\4\d{1,3}(,\d{3})"
-        data-type="currency" placeholder="300,000">
-        <div class="container-items-title">Mortgage Term</div>
-        <input type="text" placeholder="25">
-        <div class="container-items-title">Interest Rate</div>
-        <input type="text" placeholder="5.25">
-        <div class="container-items-title">Mortgage Type</div>
-        <button>Repayment</button>
-        <button>Interest Only</button>
-        
+  <div class="main-container">
+    <div class="container_1">
+      <h2>Morgate Calculator</h2>
+      <span>Clear All</span>
+      <div class="container-titles">
+        <div class="container-items">
+          <div class="container-items-title">Mortgage Amount</div>
+          <input type="text" name="currency-field" pattern="^\4\d{1,3}(,\d{3})"
+          data-type="currency" placeholder="300,000">
+          <div class="container-items-title">Mortgage Term</div>
+          <input type="text" placeholder="25">
+          <div class="container-items-title">Interest Rate</div>
+          <input type="text" placeholder="5.25">
+          <div class="container-items-title">Mortgage Type</div>
+          <button>Repayment</button>
+          <button>Interest Only</button>
+          <button>Calculate Repayments</button>
+        </div>
       </div>
     </div>
+
+    <div class="container_2">
+      <h2>Your results</h2>
+      <div class="container-text">
+        <p>
+          Your results are show below based on the information you provided.
+          To adjust the results, edit the form and click "calculate repayments" again.
+        </p>
+        <p>Your monthly repayments</p>
+        <p>Total you'll repay over the term</p>
+      </div>
+    </div>
+    
   </div>
 
   <!-- Completed results end -->
